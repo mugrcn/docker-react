@@ -6,6 +6,7 @@ COPY package.json .
 RUN npm install
 
 COPY . .
-RUN chown -R node:node /app
+
+# RUN chown -R node:node /app
 
 CMD ["npm","run","start"]
